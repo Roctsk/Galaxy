@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Galaxy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/f77600b8df.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <nav>
+        <div class='nav-item' onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Проєкт</div>
+        <div class='nav-item' onclick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});">Команда</div>
+        <div class='nav-item' onclick="document.getElementById('submit').scrollIntoView({behavior: 'smooth'});">Заявка</div>
+        <div class='nav-item switch-theme-button'>Змінити тему</div>
+    </nav>
+    <header>
+        <h1>Летимо на <span class='mars mars1'>Марс</span></h1>
+        <div class='arrow-next'><i class='fa-solid fa-arrow-down'></i></div>
+    </header>
+    <main>
+        <section class='section1' id='about'>
+            <h1>Про проєкт</h1>
+            <div class='about-wrapper'>
+                <p>За часів активного освоєння космосу, польоти на Місяць стали доступні багатим людям з розвинених країн...</p>
+            </div>
+        </section>
+        <section class='section2' id='team'>
+            <h1>Команда</h1>
+            <div class='team-wrapper'>
+                <div class='team-item team1'>
+                    <div class='team-item-top'></div>
+                    <div class='team-item-bottom'>
+                        <h2>Джамал</h2>
+                        <p>Капітан корабля. За плечима десятки польотів і згуртована команда.</p>
+                    </div>
+                </div>
+                <div class='team-item team2'>
+                    <div class='team-item-top'></div>
+                    <div class='team-item-bottom'>
+                        <h2>Артем</h2>
+                        <p>Перший пілот. Підніме і приземлить будь-який корабель.</p>
+                    </div>
+                </div>
+                <div class='team-item team3'>
+                    <div class='team-item-top'></div>
+                    <div class='team-item-bottom'>
+                        <h2>Данило</h2>
+                        <p>Другий пілот.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='section3' id='submit'>
+            <div class='submit-wrapper'>
+                <h1>Заявка</h1>
+                <div class='submit-form'>
+                    <input class='submit-input' type='text' placeholder="Ім'я" required>
+                    <p class='submit-input-label'>Ім'я</p>
+                    <input class='submit-input' type='email' placeholder='E-mail' required>
+                    <p class='submit-input-label'>E-mail</p>
+                    <input class='submit-input' type='tel' placeholder='Телефон' required>
+                    <p class='submit-input-label'>Номер телефону</p>
+                    <div class='submit-input-row'>
+                        <div class='group'>
+                            <input class='submit-input row-item days-input' type='number' placeholder='Дні' min='1' required>
+                            <p class='submit-input-label'>Днів на <span class='mars mars5'>Марсі</span></p>
+                        </div>  
+                        <div class='group'>
+                            <select class='submit-select row-item' required>
+                                <option value='1000' selected>Базовий</option>
+                                <option value='2000'>Преміум</option>
+                                <option value='3000'>Люкс</option>
+                            </select>
+                            <p class='submit-input-label'>Клас каюти</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class='submit-btn-row'>
+                    <button class='submit-btn submit-btn-calc'>Вартість</button>
+                    <button class='submit-btn submit-btn-send'>Відправити</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
